@@ -1,0 +1,140 @@
+/* portfolio */
+
+.portfolio__title {
+  @include visually-hidden;
+}
+
+.portfolio {
+  padding-top: 94px;
+}
+
+.filters__list,
+.our-works {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.filters__list {
+  margin-bottom: 50px;
+  justify-content: center;
+}
+
+.filters__item {
+  margin-right: 8px;
+}
+
+.filters__item:last-child {
+  margin-right: 0px;
+}
+
+.filters__button {
+  display: block;
+  padding: 6px 22px;
+  border-radius: 4px;
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.6;
+  color: $primary-text-color;
+  letter-spacing: 0.03em;
+  background-color: $button-color;
+  text-align: center;
+  border-color: transparent;
+  @include transition(background-color);
+}
+
+.filters__button:hover,
+.filters__button:focus {
+  color: $h-text-color;
+  background-color: $title-text-color;
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+
+/* Наши работы */
+.work__list {
+  padding: 0px;
+  margin: 0;
+  padding-bottom: 94px;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: calc(-1 * #{$card-set-gap});
+  margin-top: calc(-1 * #{$card-set-gap});
+}
+
+.work__item {
+  flex-basis: calc(100% / 3 - #{$card-set-gap});
+  margin-left: #{$card-set-gap};
+  margin-top: #{$card-set-gap};
+}
+
+a:link {
+  text-decoration: none; /* Убирает подчеркивание для ссылок */
+}
+
+.work__item:hover,
+.work__item:focus {
+  // border: 1px solid $card-border;
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+  @include transition(box-shadow);
+}
+
+.work__thumb {
+  position: relative;
+  overflow: hidden;
+}
+
+.work__img {
+  width: 370px;
+}
+
+.work__content {
+  padding: 20px 24px;
+  border: 1px solid $card-border;
+  color: $primary-text-color;
+  line-height: 2;
+}
+
+.work__name {
+  margin: 0;
+  margin-bottom: 4px;
+  font-family: inherit;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.work__description {
+  margin: 0;
+  font-family: inherit;
+  font-size: 16px;
+  text-decoration: none;
+  color: $dop-text-color;
+  line-height: 1.87;
+}
+
+.work__overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: $overlay-work-color;
+  transform: translateY(100%);
+  @include transition(transform);
+}
+
+.work__overlay-text {
+  padding: 63px 24px;
+  font-family: inherit;
+  color: $h-text-color;
+  font-size: 18px;
+  line-height: 1.56;
+}
+
+.work__item:hover .work__overlay,
+.work__item:focus .work__overlay {
+  transform: translateY(0);
+}
