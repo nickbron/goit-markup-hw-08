@@ -26,10 +26,6 @@
   }
 }
 
-.site-nav__link--current {
-  color: $title-text-color;
-}
-
 .site-nav__link {
   text-decoration: none;
   font-weight: 500;
@@ -40,6 +36,10 @@
   padding-top: 32px;
   padding-bottom: 32px;
   @include transition(color);
+}
+
+.site-nav__link--current {
+  color: $title-text-color;
 }
 
 .site-nav__link:hover,
