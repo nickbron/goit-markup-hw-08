@@ -6,16 +6,11 @@
 }
 
 .page-footer__container {
-  // margin-left: auto;
-  // margin-right: auto;
   min-width: 320px;
   padding-left: 15px;
   padding-right: 15px;
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
+  display: block;
+  text-align: center;
 
   @media screen and (min-width: 480px) {
     width: 480px;
@@ -23,14 +18,18 @@
 
   @media screen and (min-width: 768px) {
     width: 768px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: baseline;
   }
 
   @media screen and (min-width: 1200px) {
     width: 1200px;
-
     display: flex;
     align-items: baseline;
     justify-content: space-between;
+    text-align: left;
   }
 }
 
@@ -40,10 +39,11 @@
   font-weight: 400;
   font-size: 14px;
   line-height: 1.7;
+  margin-bottom: 60px;
 }
 
 .address__text {
-  margin: 0;
+  // margin: 0;
   margin-bottom: 9px;
 }
 
@@ -54,7 +54,7 @@
 }
 
 .address__list {
-  padding: 0;
+  // padding: 0;
 }
 
 /* --------------иконки СОЦ СЕТЕЙ footer --------*/
@@ -106,24 +106,20 @@
 /* --------------Подписаться-------------- */
 
 .page-footer-subscribe {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
+  margin-top: 60px;
 }
 
 .page-footer-subscribe__input {
   border: 1px solid rgba(255, 255, 255, 0.3);
   background-color: $hero-color;
   border-radius: 4px;
-  width: 450px;
+  min-width: 100%;
   height: 50px;
+  margin-bottom: 20px;
+  padding-left: 16px;
 
   @media screen and (min-width: 1200px) {
-    width: 358px;
-
-    padding-left: 16px;
+    min-width: 358px;
   }
 }
 
@@ -137,12 +133,10 @@
   background-color: $title-text-color;
   color: $h-text-color;
   cursor: pointer;
-  
- 
 
   @media screen and (min-width: 1200px) {
     display: inline-flex;
-    // align-items: center;
+    align-items: center;
     justify-content: center;
     margin-left: 12px;
   }
