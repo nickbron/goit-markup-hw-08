@@ -15,12 +15,26 @@
 }
 
 .filters__list {
-  margin-bottom: 50px;
-  justify-content: center;
+  margin-bottom: 40px;
+  justify-content: flex-start;
+
+  @media screen and (min-width: 768px) {
+    justify-content: center;
+    margin-bottom: 30px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    justify-content: center;
+    margin-bottom: 50px;
+  }
 }
 
 .filters__item {
   margin-right: 8px;
+  margin-bottom: 15px;
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 0;
+  }
 }
 
 .filters__item:last-child {
@@ -64,7 +78,14 @@
 }
 
 .work__item {
-  flex-basis: calc(100% / 3 - #{$card-set-gap});
+  @media screen and (min-width: 768px) {
+    flex-basis: calc(100% / 2 - #{$card-set-gap});
+  }
+
+  @media screen and (min-width: 1200px) {
+    flex-basis: calc(100% / 3 - #{$card-set-gap});
+  }
+
   margin-left: #{$card-set-gap};
   margin-top: #{$card-set-gap};
 }

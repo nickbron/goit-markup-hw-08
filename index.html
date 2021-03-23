@@ -51,7 +51,7 @@
                     </li>
                 </ul>
 
-                <button class="btn-menu js-open-menu">
+                <button class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
                     <svg class="menu-icon" width="24" height="16">
                         <use href="./images/icons.svg#icon-menu" />
                     </svg>
@@ -141,7 +141,10 @@
                     <li class="team__item">
                         <article class="team__article">
                             <div class="team__thumb">
-                                <img class="team__img" src="./images/igor.jpg" alt="img"> 
+                                <img class="team__img" 
+                                srcset="./images/igor.jpg 1x, ./images/igor@2x.jpg 2x"
+                                src="./images/igor.jpg" alt="img"
+                                loading="lazy"> 
                             </div>
                             <div class="team__content">
                                 <h3 class="team__name">Игорь Демьяненко</h3>
@@ -489,8 +492,26 @@
         </div>
     </div>   
 
+    <div class="menu-container js-menu-container" id="mobile-menu">
+        <button class="menu-toggle js-close-menu">
+            <svg class="menu-toggle__close-icon" data-modal-close="" width="30" height="30">
+                <use href="./images/icons.svg#icon-close"></use>
+            </svg>
+        </button>
     
-      
+        <ul class="mobile-menu">
+            <li><a href="" class="mobile-menu__link">О нас</a></li>
+            <li><a href="" class="mobile-menu__link">Работы</a></li>
+            <li><a href="" class="mobile-menu__link">Контакты</a></li>
+            <li><a href="" class="mobile-menu__link">Карьера</a></li>
+        </ul>
+    </div>
+    
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+        integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+        crossorigin="anonymous"> 
+    </script>
+    <script defer src="./js/mobile-menu.js"></script>
     <script src="./js/modal.js"></script>
 </body>
 </html>

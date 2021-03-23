@@ -6,6 +6,8 @@
 }
 
 .page-footer__container {
+  margin-left: auto;
+  margin-right: auto;
   min-width: 320px;
   padding-left: 15px;
   padding-right: 15px;
@@ -26,7 +28,7 @@
 
   @media screen and (min-width: 1200px) {
     width: 1200px;
-    display: flex;
+    // display: flex;
     align-items: baseline;
     justify-content: space-between;
     text-align: left;
@@ -107,6 +109,9 @@
 
 .page-footer-subscribe {
   margin-top: 60px;
+  @media screen and (min-width: 768px) {
+    margin-top: 0px;
+  }
 }
 
 .page-footer-subscribe__input {

@@ -15,17 +15,6 @@
   justify-content: space-between;
 }
 
-.btn-menu {
-  width: 40px;
-  height: 40px;
-  background: $h-text-color;
-  border: none;
-
-  @media screen and (min-width: 768px) {
-    display: none;
-  }
-}
-
 .site-nav__link {
   text-decoration: none;
   font-weight: 500;

@@ -21,13 +21,13 @@
 
 .team__item {
   margin-bottom: 30px;
+
   @media screen and (min-width: 768px) {
     flex-basis: calc(100% / 2 - #{$card-set-gap});
     margin-left: #{$card-set-gap};
   }
   @media screen and (min-width: 1200px) {
     flex-basis: calc(100% / 4 - #{$card-set-gap});
-    margin-left: #{$card-set-gap};
   }
 }
 
@@ -36,20 +36,26 @@
   border-radius: 0px 0px 4px 4px;
 }
 
-.team__img {
+.team__thumb {
+  height: 460px;
+
   @media screen and (min-width: 768px) {
-    width: 370px;
+    height: 374px;
   }
   @media screen and (min-width: 1200px) {
-    width: 270px;
+    height: 260px;
   }
+}
+
+.team__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .team__content {
   padding: 30px 20px;
   background: $h-text-color;
-  // border: 1px solid $card-border;
-  // box-sizing: border-box;
   text-align: center;
 }
 

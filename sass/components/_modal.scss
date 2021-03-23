@@ -64,18 +64,20 @@
   font-family: inherit;
   font-size: 20px;
   line-height: 1.17;
+  text-align: center;
 }
 
 .application-form__input {
   padding: 11px;
-  padding-left: 42px;
+  // padding-left: 42px;
+  min-width: 100%;
   border: 1px solid $border-color;
   border-radius: 4px;
   outline: none;
   font-family: inherit;
   font-size: 14px;
   line-height: 1.5;
-  width: 448px;
+  // width: 448px;
   height: 40px;
   @include transition(border-color);
 }
@@ -131,7 +133,6 @@
 }
 
 .application-form__send {
-  margin-left: 110px;
   padding: 10px 55px;
   max-width: 200px;
   height: 50px;
@@ -147,6 +148,10 @@
   background-color: $title-text-color;
   color: $h-text-color;
   @include transition(background-color);
+  // выравниваю кнопку
+  position: relative;
+  left: 50%;
+  transform: translate(-50%, 0);
 }
 
 .application-form__send:hover {
@@ -157,18 +162,20 @@
 /* -----------------checkbox------------------- */
 
 .agreement {
-  display: flex;
-  flex-direction: row;
   padding-bottom: 30px;
 }
 
 .agreement__check-label {
-  display: flex;
-  align-items: center;
   cursor: pointer;
   font-family: inherit;
-  font-size: 14px;
+  font-size: 12px;
   line-height: 1.72;
+  display: flex;
+  align-items: center;
+
+  @media screen and (min-width: 1200px) {
+    font-size: 14px;
+  }
 }
 
 .agreement a {
