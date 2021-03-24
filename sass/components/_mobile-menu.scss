@@ -1,8 +1,3 @@
-.mobile-menu__link:hover,
-.mobile-menu__link:focus {
-  text-decoration: underline;
-}
-
 .menu-toggle {
   min-height: 40px;
   min-width: 40px;
@@ -34,9 +29,12 @@
   left: 0;
   width: 100vw;
   height: 100vh;
-  padding: 32px;
+  padding: 48px 40px;
   background-color: $h-text-color;
   z-index: 999;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 
   transform: translateX(100%);
   transition: transform 250ms ease-in-out;
@@ -53,15 +51,87 @@
   color: #fff;
 }
 
-.mobile-menu {
+.menu-toggle__close-icon {
+  position: absolute;
+  display: flex;
+  margin-left: auto;
+  background: $h-text-color;
+  top: 10px;
+  right: 15px;
+  min-height: 40px;
+  min-width: 40px;
+}
+
+.menu-toggle__close-icon:hover,
+.menu-toggle__close-icon:focus {
+  fill: $title-text-color;
+  cursor: pointer;
+}
+
+.menu__list {
   padding: 0;
   margin: 0;
   list-style: none;
 }
 
-.mobile-menu__link {
-  display: block;
-  padding: 10px;
-  color: rgb(24, 22, 22);
+.menu__link {
   text-decoration: none;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 1.17;
+  color: $primary-text-color;
+  margin-bottom: 32px;
+  display: block;
+  @include transition(color);
+}
+
+.menu__link--current {
+  color: $title-text-color;
+}
+
+.menu__link:hover,
+.menu__link:focus {
+  color: $title-text-color;
+}
+
+.contacts-nav__link--phone {
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 34px;
+  line-height: 1.17;
+  display: block;
+  margin-bottom: 32px;
+  color: $title-text-color;
+}
+
+.contacts-nav__link--mail {
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.17;
+  display: block;
+  color: $primary-text-color;
+}
+
+.social__link {
+  margin: 0;
+  padding: 0;
+  margin-right: 20px;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.222;
+  color: $title-text-color;
+  position: relative;
+}
+
+.social__link:not(:last-child)::after {
+  content: '';
+  position: absolute;
+  height: 1px;
+  top: 10px;
+  right: -28px;
+  width: 22px;
+  margin-right: 10px;
+  transform: rotate(90deg);
+  background-color: $border-color;
 }

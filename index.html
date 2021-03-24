@@ -186,7 +186,9 @@
                     <li class="team__item"> 
                         <article class="team__article">
                             <div class="team__thumb">
-                                <img class="team__img" src="./images/olga.jpg" alt="img">
+                                <img class="team__img" srcset="./images/olga.jpg 1x, ./images/olga@2x.jpg 2x"
+                                 src="./images/igor.jpg" alt="img"
+                                loading="lazy">
                             </div>        
                             <div class="team__content">
                                 <h3 class="team__name">Ольга Репина</h3>
@@ -228,7 +230,9 @@
                     <li class="team__item">
                         <article class="team__article">
                             <div class="team__thumb">
-                                <img class="team__img" src="./images/nick.jpg" alt="img">
+                                <img class="team__img" srcset="./images/nick.jpg 1x, ./images/nick@2x.jpg 2x" 
+                                src="./images/igor.jpg" alt="img"
+                                loading="lazy">
                             </div>    
                             <div class="team__content">
                                 <h3 class="team__name">Николай Тарасов</h3>
@@ -270,7 +274,9 @@
                     <li class="team__item">
                         <article class="team__article">
                             <div class="team__thumb">
-                                <img class="team__img" src="./images/michael.jpg" alt="img">
+                                <img class="team__img" srcset="./images/michael.jpg 1x, ./images/michael@2x.jpg 2x"
+                                 src="./images/igor.jpg" alt="img"
+                                loading="lazy">
                             </div>      
                             <div class="team__content">
                                 <h3 class="team__name">Михаил Ермаков</h3>
@@ -494,17 +500,38 @@
 
     <div class="menu-container js-menu-container" id="mobile-menu">
         <button class="menu-toggle js-close-menu">
-            <svg class="menu-toggle__close-icon" data-modal-close="" width="30" height="30">
+            <svg class="menu-toggle__close-icon" data-modal-close="" width="19" height="19">
                 <use href="./images/icons.svg#icon-close"></use>
             </svg>
         </button>
     
-        <ul class="mobile-menu">
-            <li><a href="" class="mobile-menu__link">О нас</a></li>
-            <li><a href="" class="mobile-menu__link">Работы</a></li>
-            <li><a href="" class="mobile-menu__link">Контакты</a></li>
-            <li><a href="" class="mobile-menu__link">Карьера</a></li>
+        <ul class="menu__list">
+            <li class="menu__item">
+                <a href="./index.html" class="menu__link menu__link--current">Студия</a>
+            </li>
+            <li class="menu__item">
+                <a href="./portfolio.html" class="menu__link">Портфолио</a>
+            </li>
+            <li class="menu__item">
+                <a href="#" class="menu__link">Контакты</a>
+            </li>
         </ul>
+        <ul class="contacts__list">
+            <li class="contacts__item">
+                <a href="tel:+380961111111" class="contacts-nav__link--phone"> +38 096 111 11 11 </a>
+            </li>
+            <li class="contacts__item">
+                <a href="mailto:info@devstudio.com" class="contacts-nav__link--mail">info@devstudio.com </a>
+            </li>
+        </ul>
+        <ul class="social__list">
+            <li class="social__item">
+                <a class="social__link" href="#"> Instagram </a>
+                <a class="social__link" href="#"> Twitter </a>
+                <a class="social__link" href="#"> Facebook </a>
+                <a class="social__link" href="#"> LinkedIn</a>
+            </li>
+        </ul>   
     </div>
     
     <script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
