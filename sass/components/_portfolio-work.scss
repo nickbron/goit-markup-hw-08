@@ -5,7 +5,10 @@
 }
 
 .portfolio {
-  padding-top: 94px;
+  padding: 60px 0;
+  @media screen and (min-width: 1200px) {
+    padding: 94px 0;
+  }
 }
 
 .filters__list,
@@ -71,7 +74,6 @@
 .work__list {
   padding: 0px;
   margin: 0;
-  padding-bottom: 94px;
   list-style: none;
   display: flex;
   flex-wrap: wrap;
