@@ -111,8 +111,8 @@ a:link {
 }
 
 .work__img {
-  // width: 370px;
-  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .work__content {
@@ -152,14 +152,22 @@ a:link {
 }
 
 .work__overlay-text {
+  margin: 0;
   width: 100%;
   height: 100%;
-  padding: 63px 24px;
+  padding: 77px 24px;
   font-family: inherit;
   color: $h-text-color;
   font-size: 18px;
   line-height: 1.56;
-  // text-align: left;
+
+  @media screen and (min-width: 768px) {
+    padding: 49px 24px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding: 63px 24px;
+  }
 }
 
 .work__item:hover .work__overlay,
