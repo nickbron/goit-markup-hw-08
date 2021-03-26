@@ -52,7 +52,7 @@
 }
 
 .menu-toggle__close-icon {
-  position: absolute;
+  // position: absolute;
   display: flex;
   margin-left: auto;
   background: $h-text-color;
@@ -111,6 +111,11 @@
   line-height: 1.17;
   display: block;
   color: $primary-text-color;
+}
+
+.social__list {
+  display: flex;
+  margin-top: 64px;
 }
 
 .social__link {

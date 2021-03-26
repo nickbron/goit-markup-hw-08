@@ -46,10 +46,13 @@
 }
 
 .about-card__item:last-child {
-  margin-bottom: 0;
   @media screen and (min-width: 1200px) {
     margin-right: 0px;
   }
+}
+
+.about-card__item:nth-last-child(-n + 2) {
+  margin-bottom: 0;
 }
 
 .about-card__box {

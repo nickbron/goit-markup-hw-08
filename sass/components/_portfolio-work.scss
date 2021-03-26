@@ -31,14 +31,16 @@
 
 .filters__item {
   margin-right: 8px;
-  margin-bottom: 15px;
-  @media screen and (min-width: 1200px) {
-    margin-bottom: 0;
-  }
-}
 
-.filters__item:last-child {
-  margin-right: 0px;
+  &:last-child {
+    margin-right: 0px;
+  }
+
+  &:nth-last-child(-n + 2) {
+    @media screen and (max-width: 768px) {
+      margin-top: 15px;
+    }
+  }
 }
 
 .filters__button {
@@ -96,7 +98,6 @@ a:link {
 
 .work__item:hover,
 .work__item:focus {
-  // border: 1px solid $card-border;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
   @include transition(box-shadow);
@@ -108,7 +109,8 @@ a:link {
 }
 
 .work__img {
-  width: 370px;
+  // width: 370px;
+  width: 100%;
 }
 
 .work__content {

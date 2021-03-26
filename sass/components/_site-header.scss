@@ -1,5 +1,10 @@
 .page-header {
   outline: 1px solid $header-border;
+
+  @media screen and (max-width: 767px) {
+    padding-top: 16px;
+    padding-bottom: 16px;
+  }
 }
 
 .site-nav__list,

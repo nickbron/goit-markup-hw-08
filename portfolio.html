@@ -194,7 +194,8 @@
                     <li class="work__item">
                         <a href="#">
                             <div class="work__thumb">
-                                <img src="./images/pimg7.jpg" alt="img">
+                            <img class="work__img" srcset="./images/pimg7.jpg 1x, ./images/pimg7@2x.jpg 2x" 
+                            src="./images/pimg7.jpg" alt="img" >
                                 <div class="work__overlay">
                                     <p class="work__overlay-text">Технокряк это современная площадка распространения коронавируса. Компании используют эту
                                         платформу для цифрового
@@ -211,7 +212,8 @@
                     <li class="work__item">
                        <a href="#">
                             <div class="work__thumb">
-                                <img src="./images/pimg8.jpg" alt="img">
+                            <img class="work__img" srcset="./images/pimg8.jpg 1x, ./images/pimg8@2x.jpg 2x"
+                             src="./images/pimg8.jpg" alt="img">
                                 <div class="work__overlay">
                                     <p class="work__overlay-text">Технокряк это современная площадка распространения коронавируса. Компании используют эту
                                         платформу для цифрового
@@ -228,7 +230,8 @@
                     <li class="work__item"> 
                         <a href="#">
                             <div class="work__thumb">
-                                <img src="./images/pimg9.jpg" alt="img">
+                                <img class="work__img" srcset="./images/pimg9.jpg 1x, ./images/pimg9@2x.jpg 2x"
+                                 src="./images/pimg9.jpg" alt="img">
                                 <div class="work__overlay">
                                     <p class="work__overlay-text">Технокряк это современная площадка распространения коронавируса. Компании используют эту
                                         платформу для цифрового
@@ -248,8 +251,8 @@
 <footer class="page-footer">
     <!-- <div class="container"> -->
     <div class="page-footer__container">
-        <div>
-            <h2 class="page-footer__logo"> <span> Web</span>Studio</h2>
+        <div class="page-footer-contacts">
+            <a href="./index.html" class="page-footer__logo"> <span>Web</span>Studio</a>
             <address class="address__container">
                 <p class="address__text">г. Киев, пр-т Леси Украинки, 26</p>
                 <ul class="adress__list">
@@ -309,40 +312,42 @@
     </div>
     <!-- </div> -->
 </footer>
+
     <div class="menu-container js-menu-container" id="mobile-menu">
         <button class="menu-toggle js-close-menu">
             <svg class="menu-toggle__close-icon" data-modal-close="" width="19" height="19">
                 <use href="./images/icons.svg#icon-close"></use>
             </svg>
         </button>
-
         <ul class="menu__list">
             <li class="menu__item">
-                <a href="./index.html" class="menu__link">Студия</a>
+                <a href="./index.html" class="menu__link ">Студия</a>
             </li>
             <li class="menu__item">
-                <a href="./portfolio.html" class="menu__link  menu__link--current">Портфолио</a>
+                <a href="./portfolio.html" class="menu__link menu__link--current">Портфолио</a>
             </li>
             <li class="menu__item">
                 <a href="#" class="menu__link">Контакты</a>
             </li>
         </ul>
-        <ul class="contacts__list">
-            <li class="contacts__item">
-                <a href="tel:+380961111111" class="contacts-nav__link--phone"> +38 096 111 11 11 </a>
-            </li>
-            <li class="contacts__item">
-                <a href="mailto:info@devstudio.com" class="contacts-nav__link--mail">info@devstudio.com </a>
-            </li>
-        </ul>
-        <ul class="social__list">
-            <li class="social__item">
-                <a class="social__link" href="#"> Instagram </a>
-                <a class="social__link" href="#"> Twitter </a>
-                <a class="social__link" href="#"> Facebook </a>
-                <a class="social__link" href="#"> LinkedIn</a>
-            </li>
-        </ul>
+        <div>
+            <ul class="contacts__list">
+                <li class="contacts__item">
+                    <a href="tel:+380961111111" class="contacts-nav__link--phone"> +38 096 111 11 11 </a>
+                </li>
+                <li class="contacts__item">
+                    <a href="mailto:info@devstudio.com" class="contacts-nav__link--mail">info@devstudio.com </a>
+                </li>
+            </ul>
+            <ul class="social__list">
+                <li class="social__item">
+                    <a class="social__link" href="#"> Instagram </a>
+                    <a class="social__link" href="#"> Twitter </a>
+                    <a class="social__link" href="#"> Facebook </a>
+                    <a class="social__link" href="#"> LinkedIn</a>
+                </li>
+            </ul>
+        </div>
     </div>
 
     <script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"

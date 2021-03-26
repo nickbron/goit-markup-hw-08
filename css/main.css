@@ -73,6 +73,13 @@ img {
 }
 
 @media screen and (max-width: 767px) {
+  .page-header {
+    padding-top: 16px;
+    padding-bottom: 16px;
+  }
+}
+
+@media screen and (max-width: 767px) {
   .site-nav__list,
   .contacts-nav__list {
     display: none;
@@ -295,16 +302,20 @@ img {
   }
 }
 
+.page-footer-contacts {
+  margin-bottom: 60px;
+}
+
 .address__container {
   font-style: normal;
   color: white;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.7;
-  margin-bottom: 60px;
 }
 
 .address__text {
+  margin: 0;
   margin-bottom: 9px;
 }
 
@@ -587,14 +598,14 @@ img {
   }
 }
 
-.about-card__item:last-child {
-  margin-bottom: 0;
-}
-
 @media screen and (min-width: 1200px) {
   .about-card__item:last-child {
     margin-right: 0px;
   }
+}
+
+.about-card__item:nth-last-child(-n + 2) {
+  margin-bottom: 0;
 }
 
 .about-card__box {
@@ -717,8 +728,22 @@ img {
   }
 }
 
-.team__item {
-  margin-bottom: 30px;
+@media screen and (max-width: 767px) {
+  .team__item:last-child {
+    margin-bottom: 0px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .team__item:nth-last-child(-n + 2) {
+    margin-bottom: 0px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .team__item {
+    margin-bottom: 30px;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -726,11 +751,13 @@ img {
     -ms-flex-preferred-size: calc(100% / 2 - 30px);
         flex-basis: calc(100% / 2 - 30px);
     margin-left: 30px;
+    margin-bottom: 30px;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .team__item {
+    margin-bottom: 0px;
     -ms-flex-preferred-size: calc(100% / 4 - 30px);
         flex-basis: calc(100% / 4 - 30px);
   }
@@ -972,17 +999,16 @@ img {
 
 .filters__item {
   margin-right: 8px;
-  margin-bottom: 15px;
-}
-
-@media screen and (min-width: 1200px) {
-  .filters__item {
-    margin-bottom: 0;
-  }
 }
 
 .filters__item:last-child {
   margin-right: 0px;
+}
+
+@media screen and (max-width: 768px) {
+  .filters__item:nth-last-child(-n + 2) {
+    margin-top: 15px;
+  }
 }
 
 .filters__button {
@@ -1065,7 +1091,7 @@ a:link {
 }
 
 .work__img {
-  width: 370px;
+  width: 100%;
 }
 
 .work__content {
@@ -1375,6 +1401,8 @@ span {
   font-size: 26px;
   line-height: 1.2;
   color: white;
+  display: block;
+  margin-bottom: 20px;
 }
 
 .menu-toggle {
@@ -1449,7 +1477,6 @@ span {
 }
 
 .menu-toggle__close-icon {
-  position: absolute;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1511,6 +1538,13 @@ span {
   line-height: 1.17;
   display: block;
   color: #212121;
+}
+
+.social__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 64px;
 }
 
 .social__link {

@@ -8,6 +8,7 @@
 .page-footer__container {
   margin-left: auto;
   margin-right: auto;
+
   min-width: 320px;
   padding-left: 15px;
   padding-right: 15px;
@@ -35,17 +36,20 @@
   }
 }
 
+.page-footer-contacts {
+  margin-bottom: 60px;
+}
+
 .address__container {
   font-style: normal;
   color: $h-text-color;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.7;
-  margin-bottom: 60px;
 }
 
 .address__text {
-  // margin: 0;
+  margin: 0;
   margin-bottom: 9px;
 }
 
